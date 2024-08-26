@@ -1,22 +1,27 @@
+
+"use client";
+
 import React from "react";
 
-interface CardInterface {
-    color?: string;
-    qty?: string;
-    text?: string;
-    icon?: React.ReactNode;
+interface CardProps {
+  color: string;
+  qty: string;
+  text: string;
+  icon: React.ReactNode;
 }
 
-export function Card({color, qty, text, icon}: CardInterface) {
-    return (
-        <div className={`${color} p-6 flex 
-                        gap-2 rounded-xl`}>
-            <div className="flex-1 flex flex-col">
-                <strong className="text-3xl font-bold">{qty}</strong>
-                <span className="text-sm text-zinc-500">{text}</span>
-            </div>
-            {icon}
-
+const Card: React.FC<CardProps> = ({ color, qty, text, icon }) => {
+  return (
+    <div className={`p-4 rounded-lg shadow-md ${color}`}>
+      <div className="flex items-center justify-between">
+        <div className="flex items-center">
+          <div className="mr-4">{icon}</div>
+          <div className="text-xl font-bold">{qty}</div>
         </div>
-    );
-}
+        <div className="text-lg">{text}</div>
+      </div>
+    </div>
+  );
+};
+
+export default Card;
