@@ -1,33 +1,30 @@
+/* globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  body {
+    @apply bg-gray-100 text-gray-900; 
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  .dark body {
+    @apply bg-gray-900 text-gray-100;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .card-light {
+    @apply bg-white text-gray-900;
+  }
+
+  .card-dark {
+    @apply bg-gray-800 text-gray-100;
+  }
+
+  .button-light {
+    @apply bg-blue-500 text-white hover:bg-blue-700;
+  }
+
+  .button-dark {
+    @apply bg-blue-700 text-gray-100 hover:bg-blue-900;
   }
 }
