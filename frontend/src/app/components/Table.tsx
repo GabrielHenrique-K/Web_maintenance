@@ -1,15 +1,15 @@
 // src/app/components/Table.tsx
-"use client";  // Adicione esta linha no início do arquivo
+"use client";  
 
 import React from 'react';
 
 interface TableProps {
   headers: string[];
-  data: any[]; // Dados de qualquer tipo; você pode definir tipos mais específicos conforme necessário
+  data: any[]; 
 }
 
 const Table: React.FC<TableProps> = ({ headers, data }) => {
-  // Função para renderizar as células de cada linha
+
   const renderRow = (item: any, index: number) => {
     return headers.map((header, headerIndex) => (
       <td key={headerIndex} className="border px-4 py-2">

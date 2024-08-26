@@ -1,4 +1,4 @@
-// Adicione "use client" se o componente usar hooks
+
 "use client";
 
 const Footer: React.FC = () => {

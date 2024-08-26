@@ -19,7 +19,7 @@ interface Machine {
 
 const initialMachines: Machine[] = [
   { name: 'Lathe', type: 'CNC', model: 'X1', manufactureDate: '2020-05-10', serialNumber: 'L123', location: 'Shop Floor', maintenanceHistory: 'Regular' },
-  // Adicione mais máquinas conforme necessário
+  
 ];
 
 const MachinePage: React.FC = () => {
@@ -34,7 +34,7 @@ const MachinePage: React.FC = () => {
       <div className="flex flex-1">
         <Aside />
 
-        <main className="flex-1 flex flex-col p-6 ml-64"> {/* ml-64 para dar espaço ao Aside */}
+        <main className="flex-1 flex flex-col p-6 ml-64"> 
           <h1 className="text-4xl font-bold mb-4">Machines</h1>
           <MachineForm onAddMachine={handleAddMachine} />
           <Table

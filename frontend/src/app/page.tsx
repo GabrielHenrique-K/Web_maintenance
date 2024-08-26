@@ -19,19 +19,19 @@ const cards = [
 const pageData = {
   machines: [
     { name: 'Lathe', type: 'CNC', model: 'X1', manufactureDate: '2020-05-10', serialNumber: 'L123', location: 'Shop Floor', maintenanceHistory: 'Regular' },
-    // Add more machine data here
+    
   ],
   users: [
     { username: 'john_doe', email: 'john.doe@example.com', role: 'Admin' },
-    // Add more user data here
+    
   ],
   inventory: [
     { name: 'Screwdriver', code: 'SD001', supplier: 'ToolCo', quantity: 50, unitValue: 5 },
-    // Add more inventory data here
+    
   ],
   teams: [
     { name: 'Team A', members: 'Alice, Bob', specialty: 'Mechanical' },
-    // Add more team data here
+    
   ],
 };
 

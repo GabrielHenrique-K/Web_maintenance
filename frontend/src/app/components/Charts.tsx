@@ -13,7 +13,7 @@ import {
   PointElement
 } from 'chart.js';
 
-// Registro dos elementos necessários para o gráfico
+
 ChartJS.register(LineElement, CategoryScale, LinearScale, Title, Tooltip, Legend, PointElement);
 
 const Chart: React.FC = () => {
