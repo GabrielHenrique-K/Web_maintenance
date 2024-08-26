@@ -50,7 +50,7 @@ const Chart: React.FC = () => {
   };
 
   return (
-    <div style={{ width: '50%', maxWidth: '500px', margin: 'auto' }}>
+    <div style={{ width: '50%', maxWidth: '5000px', margin: 'auto' }}>
       <Line data={data} options={options} />
     </div>
   );
